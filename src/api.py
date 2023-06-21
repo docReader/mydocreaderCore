@@ -6,10 +6,9 @@ import shutil
 import uvicorn
 import configparser
 from starlette.responses import StreamingResponse
-        
+import py_eureka_client.eureka_client as eureka_client
 
 import utils_drtv
-from run import run
 import infer
 from infer import detect_template
 import return_dicts
@@ -17,16 +16,17 @@ import return_dicts
 from fastapi import FastAPI, Form, File, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 
+
 config = configparser.ConfigParser()
 config.read(os.path.join(os.getcwd(), 'src/config.ini'))
 
-
-# The flowing code will register your server to eureka server and also start to send heartbeat every 30 seconds
-# import py_eureka_client.eureka_client as eureka_client
-# dr_core_rest_server_port = 9852
-# eureka_client.init(eureka_server="http://172.17.133.15:8761/eureka",
-#                    app_name="dr-core",
-#                    instance_port=dr_core_rest_server_port)
+# Conncet to the Registry server if not deployed in local machine
+if config['PATHS'].getboolean('production_deployment'):
+    # The flowing code will register your server to eureka server and also start to send heartbeat every 30 seconds
+    dr_core_rest_server_port = 9852
+    eureka_client.init(eureka_server=config.get('DATABASE', 'server_host'),
+                    app_name="dr-core",
+                    instance_port=dr_core_rest_server_port)
 
 app = FastAPI()
 

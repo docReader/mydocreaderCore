@@ -1,11 +1,25 @@
-# myDocReaderCore
+# mydocreaderCore
 Template Validation and Text Extraction APIs
 
-## Installation Guidelines
+## Requirements
+- docker
+- docker-compose
 
-Clone the repository.
+## Get Started
+
+- Clone the repository.
+- Update the `production_deployment` (boolean), `fileserver` endpoint and `server_host` accordingly in `src/config.ini` file.
+- Go to the directory of the file docker-compose.yml.
 
 
-Run the following command - 
+Run the following command to run the application - 
 
-` docker image prune && docker-compose build && docker-compose up `
+```bash
+docker image prune && docker-compose build && docker-compose up 
+```
+
+To stop the application, run - 
+
+```bash
+docker-compose down 
+```
