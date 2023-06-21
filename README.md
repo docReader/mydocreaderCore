@@ -9,7 +9,8 @@ Template Validation and Text Extraction APIs
 
 - Clone the repository.
 - Update the `production_deployment` (boolean), `fileserver` endpoint and `server_host` accordingly in `src/config.ini` file.
-- Go to the directory of the file docker-compose.yml.
+- Update `HOST` and `hostname` in `docker-compose.yaml` file.
+- Go to the directory of the file docker-compose.yaml.
 
 
 Run the following command to run the application - 
