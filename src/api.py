@@ -22,11 +22,11 @@ config.read(os.path.join(os.getcwd(), 'src/config.ini'))
 
 
 # The flowing code will register your server to eureka server and also start to send heartbeat every 30 seconds
-import py_eureka_client.eureka_client as eureka_client
-dr_core_rest_server_port = 9852
-eureka_client.init(eureka_server="http://172.17.133.15:8761/eureka",
-                   app_name="dr-core",
-                   instance_port=dr_core_rest_server_port)
+# import py_eureka_client.eureka_client as eureka_client
+# dr_core_rest_server_port = 9852
+# eureka_client.init(eureka_server="http://172.17.133.15:8761/eureka",
+#                    app_name="dr-core",
+#                    instance_port=dr_core_rest_server_port)
 
 app = FastAPI()
 

@@ -1,0 +1,17 @@
+version: '3'
+services:
+  dr-core:
+    build: .
+    ports:
+      - "9852:9852"
+    # volumes:
+    #   - ~/../../var/:/var
+      # - ~/ocr/ocr_flask_api_dev/static/:/usr/bin/app_test/static
+      # - ~/../../usr/local/ocr/coreocrservice/logs/:/usr/bin/app_test/static/logs
+
+    environment:
+      # FLASK_ENV: test_development
+      eureka.client.serviceUrl.defaultZone : http://172.17.133.15:8761/eureka
+      HOST: 172.17.133.15
+      
+    hostname: 172.17.133.15

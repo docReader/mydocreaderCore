@@ -1,0 +1,730 @@
+{
+	"info": {
+		"_postman_id": "14f47ac5-7f07-4a53-8c84-6f7a516eae41",
+		"name": "a2i_drtv",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "template_validation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "projectID",
+							"value": "236",
+							"description": "http://ocr.apurbatech.com:9852/template_validation/",
+							"type": "text"
+						},
+						{
+							"key": "fileName",
+							"value": "MdHabiburRahmanKhan0",
+							"description": "http://0.0.0.0:9852/template_validation/",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://0.0.0.0:9852/template_validation/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "9852",
+					"path": [
+						"template_validation",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "extract_text_plugin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "projectID",
+							"value": "236",
+							"description": "http://ocr.apurbatech.com:9852/template_validation/",
+							"type": "text"
+						},
+						{
+							"key": "fileName",
+							"value": "MdHabiburRahmanKhan0",
+							"description": "http://0.0.0.0:9852/template_validation/",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://0.0.0.0:9852/template_validation/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "9852",
+					"path": [
+						"template_validation",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "auto_noise",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "projectID",
+							"value": "236",
+							"description": "http://ocr.apurbatech.com:9852/auto_noise/",
+							"type": "text"
+						},
+						{
+							"key": "fileName",
+							"value": "MdHabiburRahmanKhan0",
+							"description": "http://0.0.0.0:9852/auto_noise/",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://0.0.0.0:9852/auto_noise/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "9852",
+					"path": [
+						"auto_noise",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "extract_text",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "projectID",
+							"value": "255",
+							"description": "http://ocr.apurbatech.com:9852/extract_text/",
+							"type": "text"
+						},
+						{
+							"key": "fileName",
+							"value": "bpsc_022_page_1",
+							"description": "http://0.0.0.0:9852/extract_text/",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://ocr.apurbatech.com:9852/extract_text/",
+					"protocol": "http",
+					"host": [
+						"ocr",
+						"apurbatech",
+						"com"
+					],
+					"port": "9852",
+					"path": [
+						"extract_text",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "noise_removal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "projectID",
+							"value": "236",
+							"description": "http://ocr-dev.apurbatech.com:5000/auto_noise_dr",
+							"type": "text"
+						},
+						{
+							"key": "fileName",
+							"value": "platinum-frendz",
+							"type": "text"
+						},
+						{
+							"key": "noiseType",
+							"value": "['all']",
+							"description": "all to apply all types of noises\nskew to apply skew noise\nborder to apply border noise\nbackground to apply background noise\ncycleGanNR to apply ML based model\nskew/border to apply skew and border noises\n[Any combination of skew/border/background/cycleGanNR to apply any combination of skew and border and background noises]",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://ocr-dev.apurbatech.com:5000/auto_noise_dr",
+					"protocol": "http",
+					"host": [
+						"ocr-dev",
+						"apurbatech",
+						"com"
+					],
+					"port": "5000",
+					"path": [
+						"auto_noise_dr"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "drtv_server",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "projectID",
+							"value": "236",
+							"description": "http://ocr.apurbatech.com:9852/drtv_server/",
+							"type": "text"
+						},
+						{
+							"key": "fileName",
+							"value": "etinKH",
+							"description": "http://0.0.0.0:9852/drtv_server/",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "http://35.82.114.147:9852/drtv_server/",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "http://172.17.133.15:9852/drtv_server/",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "https://documentreader.live.mygov.bd/dr-core/drtv_server/",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://0.0.0.0:9852/drtv_server/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "9852",
+					"path": [
+						"drtv_server",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "education_template_validation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "projectID",
+							"value": "249",
+							"description": "http://ocr.apurbatech.com:9852/education_template_validation/",
+							"type": "text"
+						},
+						{
+							"key": "fileName",
+							"value": "6747773209_b2fe01a770_b",
+							"description": "http://0.0.0.0:9852/education_template_validation/",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "http://35.82.114.147:9852/education/",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "http://172.17.133.15:9852/education/",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "https://documentreader.live.mygov.bd/dr-core/education/",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://0.0.0.0:9852/education_template_validation/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "9852",
+					"path": [
+						"education_template_validation",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "business_template_validation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "projectID",
+							"value": "236",
+							"description": "http://ocr.apurbatech.com:9852/business_template_validation/",
+							"type": "text"
+						},
+						{
+							"key": "fileName",
+							"value": "etinKH",
+							"description": "http://0.0.0.0:9852/business_template_validation/",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "http://35.82.114.147:9852/education/",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "http://172.17.133.15:9852/education/",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "https://documentreader.live.mygov.bd/dr-core/education/",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://0.0.0.0:9852/business_template_validation/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "9852",
+					"path": [
+						"business_template_validation",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "land_template_validation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "projectID",
+							"value": "237",
+							"description": "http://ocr.apurbatech.com:9852/land_template_validation/",
+							"type": "text"
+						},
+						{
+							"key": "fileName",
+							"value": "RS&CSখনিয়ান-3",
+							"description": "http://0.0.0.0:9852/business_template_validation/",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "http://35.82.114.147:9852/education/",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "http://172.17.133.15:9852/education/",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "https://documentreader.live.mygov.bd/dr-core/education/",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://ocr.apurbatech.com:9852/land_template_validation/",
+					"protocol": "http",
+					"host": [
+						"ocr",
+						"apurbatech",
+						"com"
+					],
+					"port": "9852",
+					"path": [
+						"land_template_validation",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "education",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "projectID",
+							"value": "249",
+							"description": "http://ocr.apurbatech.com:9852/education/",
+							"type": "text"
+						},
+						{
+							"key": "fileName",
+							"value": "HSCdsadsaddsds",
+							"description": "http://0.0.0.0:9852/education/",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "http://35.82.114.147:9852/education/",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "http://172.17.133.15:9852/education/",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "https://documentreader.live.mygov.bd/dr-core/education/",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://ocr.apurbatech.com:9852/education/",
+					"protocol": "http",
+					"host": [
+						"ocr",
+						"apurbatech",
+						"com"
+					],
+					"port": "9852",
+					"path": [
+						"education",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "land",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "projectID",
+							"value": "249",
+							"description": "http://ocr.apurbatech.com:9852/land/",
+							"type": "text"
+						},
+						{
+							"key": "fileName",
+							"value": "HSCdsadsaddsds",
+							"description": "http://0.0.0.0:9852/land/",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "http://35.82.114.147:9852/education/",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "http://172.17.133.15:9852/education/",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "https://documentreader.live.mygov.bd/dr-core/education/",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://ocr.apurbatech.com:9852/land/",
+					"protocol": "http",
+					"host": [
+						"ocr",
+						"apurbatech",
+						"com"
+					],
+					"port": "9852",
+					"path": [
+						"land",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "business",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "projectID",
+							"value": "236",
+							"description": "http://ocr.apurbatech.com:9852/business/",
+							"type": "text"
+						},
+						{
+							"key": "fileName",
+							"value": "etinKH",
+							"description": "http://0.0.0.0:9852/education/",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "http://35.82.114.147:9852/education/",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "http://172.17.133.15:9852/education/",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "https://documentreader.live.mygov.bd/dr-core/education/",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://ocr.apurbatech.com:9852/business/",
+					"protocol": "http",
+					"host": [
+						"ocr",
+						"apurbatech",
+						"com"
+					],
+					"port": "9852",
+					"path": [
+						"business",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "drtv_server_plugin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"description": "http://ocr.apurbatech.com:9852/drtv_server_plugin/",
+							"type": "file",
+							"src": "/home/sazzad/Downloads/61f2c118f06bb.png"
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "http://0.0.0.0:9852/drtv_server_plugin/",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "http://35.82.114.147:9852/drtv_server_plugin/",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://172.17.133.15:9852/drtv_server_plugin/",
+					"protocol": "http",
+					"host": [
+						"172",
+						"17",
+						"133",
+						"15"
+					],
+					"port": "9852",
+					"path": [
+						"drtv_server_plugin",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "template_validation_plugin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"description": "http://ocr.apurbatech.com:9852/template_validation_plugin/",
+							"type": "file",
+							"src": "/home/sazzad/Downloads/1648830717077.png"
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "http://0.0.0.0:9852/template_validation_plugin/",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "http://35.82.114.147:9852/template_validation_plugin/",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://172.17.133.15:9852/template_validation_plugin/",
+					"protocol": "http",
+					"host": [
+						"172",
+						"17",
+						"133",
+						"15"
+					],
+					"port": "9852",
+					"path": [
+						"template_validation_plugin",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
